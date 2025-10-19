@@ -535,29 +535,29 @@ function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-black mb-4 tracking-tight">Contact Us</h2>
         </div>
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           <div>
-            <h3 className="text-3xl font-bold text-black mb-8 tracking-wide">Get In Touch</h3>
-            <div className="space-y-8">
+            <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6 lg:mb-8 tracking-wide">Get In Touch</h3>
+            <div className="space-y-6 lg:space-y-8">
               <div>
-                <h4 className="font-semibold text-black text-2xl mb-3">Phone</h4>
-                <p className="text-gray-600 text-2xl">{CompleteAutoSolutions.phone}</p>
+                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Phone</h4>
+                <p className="text-gray-600 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.phone}</p>
               </div>
               <div>
-                <h4 className="font-semibold text-black text-2xl mb-3">Email</h4>
-                <p className="text-gray-600 text-2xl">{CompleteAutoSolutions.email}</p>
+                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Email</h4>
+                <p className="text-gray-600 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.email}</p>
               </div>
               <div>
-                <h4 className="font-semibold text-black text-2xl mb-3">Address</h4>
-                <p className="text-gray-600 text-2xl">{CompleteAutoSolutions.address}</p>
+                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Address</h4>
+                <p className="text-gray-600 text-lg lg:text-2xl break-words leading-relaxed">{CompleteAutoSolutions.address}</p>
               </div>
             </div>
           </div>
           <div>
-            <h3 className="text-3xl font-bold text-black mb-8 tracking-wide">Find Us</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6 lg:mb-8 tracking-wide">Find Us</h3>
             <iframe
               title="Map"
-              className="w-full h-[420px] rounded-lg"
+              className="w-full h-[300px] sm:h-[350px] lg:h-[420px] rounded-lg"
               src="https://maps.google.com/maps?q=14000+Blossom+Hill+Road,+Los+Gatos,+CA+95032&t=&z=15&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
             />
