@@ -167,7 +167,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-white text-black sticky top-0 z-50 border-b border-gray-200">
+    <header className="bg-gray-900 text-white sticky top-0 z-50 border-b border-gray-700">
       <Container>
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center">
@@ -182,7 +182,7 @@ function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-black hover:text-gray-600 transition-colors font-medium tracking-wide"
+                className="text-white hover:text-gray-300 transition-colors font-medium tracking-wide"
               >
                 {item.label}
               </button>
@@ -193,26 +193,26 @@ function Header() {
               href="https://yelp.com/biz/complete-auto-solutions-los-gatos" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-black text-white px-8 py-3 text-base font-semibold hover:bg-gray-800 transition-colors tracking-wide"
+              className="bg-white text-black px-8 py-3 text-base font-semibold hover:bg-gray-200 transition-colors tracking-wide"
             >
               Review Us
             </a>
           </div>
           <button
-            className="lg:hidden text-black"
+            className="lg:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             ☰
           </button>
         </div>
         {isMenuOpen && (
-          <nav className="lg:hidden pb-6 border-t border-gray-200">
+          <nav className="lg:hidden pb-6 border-t border-gray-700">
             <div className="pt-4 space-y-4">
               {nav.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block text-black hover:text-gray-600 transition-colors font-medium w-full text-left"
+                  className="block text-white hover:text-gray-300 transition-colors font-medium w-full text-left"
                 >
                   {item.label}
                 </button>
@@ -222,7 +222,7 @@ function Header() {
                   href="https://yelp.com/biz/complete-auto-solutions-los-gatos" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block bg-black text-white px-8 py-3 text-base font-semibold hover:bg-gray-800 transition-colors tracking-wide text-center"
+                  className="block bg-white text-black px-8 py-3 text-base font-semibold hover:bg-gray-200 transition-colors tracking-wide text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Review Us
