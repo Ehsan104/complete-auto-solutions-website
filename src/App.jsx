@@ -241,7 +241,7 @@ function Hero() {
   return (
     <div 
       id="home"
-      className="relative min-h-screen flex items-center justify-center text-white"
+      className="relative min-h-screen flex items-center justify-center text-white bg-black"
       style={{
         backgroundImage: `url('/hero-bg.jpg')`,
         backgroundSize: 'cover',
@@ -250,7 +250,7 @@ function Hero() {
       }}
     >
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       
       {/* Content */}
       <div className="relative z-10 text-center px-4">
@@ -305,20 +305,20 @@ function InstagramFeed() {
   };
 
   return (
-    <Section className="bg-gray-50">
+    <Section className="bg-gray-900">
       <Container>
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             Follow Our Work
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-300 mb-8">
             See our latest projects and builds on Instagram
           </p>
           <a 
             href="https://instagram.com/completeautosolutions_" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center text-black font-semibold hover:text-gray-600 transition-colors"
+            className="inline-flex items-center text-white font-semibold hover:text-gray-300 transition-colors"
           >
             @completeautosolutions_
             <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -403,22 +403,22 @@ function InstagramFeed() {
 // Services section
 function Services() {
   return (
-    <Section id="services" className="bg-white">
+    <Section id="services" className="bg-gray-800">
       <Container>
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-black mb-4 tracking-tight">Our Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-5xl font-bold text-white mb-4 tracking-tight">Our Services</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Professional automotive services for foreign and domestic vehicles
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={service.id} className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors">
-              <div className="bg-white aspect-square rounded-lg mb-6 flex items-center justify-center text-6xl hover:scale-105 transition-transform shadow-sm">
+            <div key={service.id} className="bg-gray-700 rounded-xl p-6 hover:bg-gray-600 transition-colors">
+              <div className="bg-gray-600 aspect-square rounded-lg mb-6 flex items-center justify-center text-6xl hover:scale-105 transition-transform shadow-sm">
                 {service.image}
               </div>
-              <h3 className="text-xl font-bold text-black mb-3 tracking-wide">{service.title}</h3>
-              <p className="text-gray-600 text-base leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{service.title}</h3>
+              <p className="text-gray-300 text-base leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
