@@ -558,7 +558,7 @@ function Contact() {
             <iframe
               title="Map"
               className="w-full h-[300px] sm:h-[350px] lg:h-[420px] rounded-lg"
-              src="https://maps.google.com/maps?q=14000+Blossom+Hill+Road,+Los+Gatos,+CA+95032&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Complete+Auto+Solutions+Los+Gatos&t=&z=15&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
             />
           </div>
