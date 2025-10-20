@@ -167,7 +167,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-gray-900 text-white sticky top-0 z-50 border-b border-gray-700">
+    <header className="bg-white text-black sticky top-0 z-50 border-b border-gray-200">
       <Container>
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center">
@@ -182,7 +182,7 @@ function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-white hover:text-gray-300 transition-colors font-medium tracking-wide"
+                className="text-black hover:text-gray-600 transition-colors font-medium tracking-wide"
               >
                 {item.label}
               </button>
@@ -193,26 +193,26 @@ function Header() {
               href="https://yelp.com/biz/complete-auto-solutions-los-gatos" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-white text-black px-8 py-3 text-base font-semibold hover:bg-gray-200 transition-colors tracking-wide"
+              className="bg-black text-white px-8 py-3 text-base font-semibold hover:bg-gray-800 transition-colors tracking-wide"
             >
               Review Us
             </a>
           </div>
           <button
-            className="lg:hidden text-white"
+            className="lg:hidden text-black"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             ☰
           </button>
         </div>
         {isMenuOpen && (
-          <nav className="lg:hidden pb-6 border-t border-gray-700">
+          <nav className="lg:hidden pb-6 border-t border-gray-200">
             <div className="pt-4 space-y-4">
               {nav.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block text-white hover:text-gray-300 transition-colors font-medium w-full text-left"
+                  className="block text-black hover:text-gray-600 transition-colors font-medium w-full text-left"
                 >
                   {item.label}
                 </button>
@@ -222,7 +222,7 @@ function Header() {
                   href="https://yelp.com/biz/complete-auto-solutions-los-gatos" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block bg-white text-black px-8 py-3 text-base font-semibold hover:bg-gray-200 transition-colors tracking-wide text-center"
+                  className="block bg-black text-white px-8 py-3 text-base font-semibold hover:bg-gray-800 transition-colors tracking-wide text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Review Us
@@ -305,7 +305,7 @@ function InstagramFeed() {
   };
 
   return (
-    <Section className="bg-gray-900">
+    <Section className="bg-black">
       <Container>
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
@@ -403,7 +403,7 @@ function InstagramFeed() {
 // Services section
 function Services() {
   return (
-    <Section id="services" className="bg-gray-800">
+    <Section id="services" className="bg-black">
       <Container>
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-white mb-4 tracking-tight">Our Services</h2>
@@ -413,8 +413,8 @@ function Services() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={service.id} className="bg-gray-700 rounded-xl p-6 hover:bg-gray-600 transition-colors">
-              <div className="bg-gray-600 aspect-square rounded-lg mb-6 flex items-center justify-center text-6xl hover:scale-105 transition-transform shadow-sm">
+            <div key={service.id} className="bg-gray-900 rounded-xl p-6 hover:bg-gray-800 transition-colors">
+              <div className="bg-gray-800 aspect-square rounded-lg mb-6 flex items-center justify-center text-6xl hover:scale-105 transition-transform shadow-sm">
                 {service.image}
               </div>
               <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{service.title}</h3>
@@ -530,31 +530,31 @@ function About() {
 // Contact section with map
 function Contact() {
   return (
-    <Section id="contact" className="bg-white">
+    <Section id="contact" className="bg-black">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-black mb-4 tracking-tight">Contact Us</h2>
+          <h2 className="text-5xl font-bold text-white mb-4 tracking-tight">Contact Us</h2>
         </div>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6 lg:mb-8 tracking-wide">Get In Touch</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 lg:mb-8 tracking-wide">Get In Touch</h3>
             <div className="space-y-6 lg:space-y-8">
               <div>
-                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Phone</h4>
-                <p className="text-gray-600 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.phone}</p>
+                <h4 className="font-semibold text-white text-lg lg:text-2xl mb-2 lg:mb-3">Phone</h4>
+                <p className="text-gray-300 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.phone}</p>
               </div>
               <div>
-                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Email</h4>
-                <p className="text-gray-600 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.email}</p>
+                <h4 className="font-semibold text-white text-lg lg:text-2xl mb-2 lg:mb-3">Email</h4>
+                <p className="text-gray-300 text-lg lg:text-2xl break-words">{CompleteAutoSolutions.email}</p>
               </div>
               <div>
-                <h4 className="font-semibold text-black text-lg lg:text-2xl mb-2 lg:mb-3">Address</h4>
-                <p className="text-gray-600 text-lg lg:text-2xl break-words leading-relaxed">{CompleteAutoSolutions.address}</p>
+                <h4 className="font-semibold text-white text-lg lg:text-2xl mb-2 lg:mb-3">Address</h4>
+                <p className="text-gray-300 text-lg lg:text-2xl break-words leading-relaxed">{CompleteAutoSolutions.address}</p>
               </div>
             </div>
           </div>
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-black mb-6 lg:mb-8 tracking-wide">Find Us</h3>
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6 lg:mb-8 tracking-wide">Find Us</h3>
             <iframe
               title="Map"
               className="w-full h-[300px] sm:h-[350px] lg:h-[420px] rounded-lg"
