@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Business data
 const CompleteAutoSolutions = {
@@ -653,6 +654,7 @@ function App() {
       </main>
       <Footer />
       <BackToTop />
+      <Analytics />
     </div>
   );
 }
